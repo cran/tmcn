@@ -4,10 +4,10 @@
 \alias{createWordFreq}
 \title{Create a word frequency data.frame.}
 \usage{
-createWordFreq(string, onlyCN = TRUE, stopwords = NULL, useStopDic = TRUE)
+createWordFreq(obj, onlyCN = TRUE, stopwords = NULL, useStopDic = TRUE)
 }
 \arguments{
-\item{string}{A character vector to calculate words frequency.}
+\item{obj}{A character vector or \code{DocumentTermMatrix} to calculate words frequency.}
 
 \item{onlyCN}{Keep only chinese words.}
 

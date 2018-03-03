@@ -6,7 +6,7 @@
 \title{Sengment a sentence.}
 \usage{
 segmentCN(strwords, package = c("jiebaR", "Rwordseg"), nature = FALSE, 
-  nosymbol = TRUE, returnType = c("vector", "tm"))
+  nosymbol = TRUE, useStopDic = FALSE, returnType = c("vector", "tm"))
 insertWords(inswords, package = c("jiebaR", "Rwordseg"))
 }
 \arguments{
@@ -17,6 +17,8 @@ insertWords(inswords, package = c("jiebaR", "Rwordseg"))
 \item{nature}{Whether to recognise the nature of the words.}
 
 \item{nosymbol}{Whether to keep symbols in the sentence.}
+
+\item{useStopDic}{Whether to use the default stop words.}
 
 \item{returnType}{Default is a string vector but we also can choose 'tm' 
 to output a single string separated by space so that it can be used by \code{\link[tm]{Corpus}} directly.}

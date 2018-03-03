@@ -21,6 +21,13 @@
 	return(OUT)
 }
 
+.getStopWords <- function() {
+	.tmcnEnv <- .verifyEnv()
+	utils::data(STOPWORDS, envir = .tmcnEnv)
+	STOPWORDS <- get("STOPWORDS", envir = .tmcnEnv)
+	return(STOPWORDS)
+}
+
 .strsplit_space_tokenizer <- function(x) {
 	unlist(strsplit(as.character(x), "[[:space:]]+"))
 }
